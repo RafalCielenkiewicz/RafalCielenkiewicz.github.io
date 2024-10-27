@@ -77,27 +77,43 @@
             text-decoration: underline;
         }
         .language {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .language-name {
-            width: 70px;
-        }
-        .dots {
-            display: flex;
-            gap: 5px;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.language-name {
+    width: 80px; /* Zwiększ szerokość, aby zachować równomierny odstęp */
+    text-align: left;
+}
+.dots {
+    display: flex;
+    gap: 5px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #4b306a;
+}
+.dot.filled {
+    background-color: #000;
+    border: none;
+}
         .dot {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: 2px solid #4b306a;
-        }
-        .dot.filled {
-            background-color: #000;
-            border: none;
-            }
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #4b306a;
+    box-sizing: border-box; /* Zapewnia, że rozmiar kropek uwzględnia obramowanie */
+}
+.dot.filled {
+    background-color: #000;
+    border: 2px solid #000; /* Ustawienie jednolitego obramowania dla wypełnionych kropek */
+}
+
+
 
     </style>
 </head>
